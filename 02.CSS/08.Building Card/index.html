@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+      body {
+        color: white;
+        background: linear-gradient(155deg, #2c3e50, #c5c3c3);
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      .card {
+        padding: 30px 80px;
+        border: 4px solid rgb(155, 185, 218);
+        border-radius: 30px;
+        background-color: black;
+        align-items: center;
+      }
+
+      .image-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+      h2 {
+        text-transform: uppercase;
+        padding: 3px;
+        background-color: rgb(232, 232, 107);
+        border-radius: 20px;
+        color: black;
+        gap: 5px;
+      }
+
+      .two-buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .cart-button,
+      .buy-button {
+        font-family: "Courier New", Courier, monospace;
+        font-size: larger;
+        border-radius: 30px;
+        font-weight: bolder;
+        padding: 10px 25px;
+        background-color: rgb(92, 239, 239);
+      }
+
+      .cart-button:hover,
+      .buy-button:hover {
+        cursor: pointer;
+        background-color: aqua;
+        border: 2px solid rgb(211, 193, 211);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="image-container">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1679913792906-13ccc5c84d44?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="headphone"
+            height="300px"
+            width="400px"
+            style="border-radius: 30px"
+          />
+        </div>
+        <h1>Soundcore H30i Headphone</h1>
+        <div class="image-content">
+          <h2>C</h2>
+          <h2>o</h2>
+          <h2>m</h2>
+          <h2>i</h2>
+          <h2>n</h2>
+          <h2>g</h2>
+          <h2></h2>
+          <h2>s</h2>
+          <h2>o</h2>
+          <h2>o</h2>
+          <h2>n</h2>
+        </div>
+
+        <div class="two-buttons">
+          <button class="buy-button">Buy Now</button>
+          <button class="cart-button">
+            <i class="fa-solid fa-cart-shopping">Add To Cart </i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
