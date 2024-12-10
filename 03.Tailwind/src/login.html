@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-black text-white min-h-screen flex justify-center items-center"
+  >
+    <div
+      class="flex flex-col bg-gray-600 rounded-xl p-10 max-w-md w-full shadow-xl shadow-blue-100 text-center hover:bg-gray-500"
+    >
+      <h1 class="font-bold text-3xl mb-10">Login</h1>
+      <form class="text-start flex flex-col gap-3 text-lg font-semibold">
+        <div class="p-5 font-semibold">
+          <lable for="">Email</lable>
+          <input
+            type="email"
+            placeholder="Enter your Email"
+            class="p-2 rounded-md w-full text-black focus:outline-none focus:ring-4 focus:ring-blue-300 mt-1"
+          />
+        </div>
+        <div class="p-5 font-semibold">
+          <lable for="">Password</lable>
+          <input
+            type="password"
+            placeholder="Enter your Password"
+            class="p-2 rounded-md w-full text-black focus:outline-none focus:ring-4 focus:ring-blue-300 mt-1"
+          />
+        </div>
+        <button
+          type="submit"
+          class="ml-3 mt-3 p-2 rounded-md bg-green-500 hover:bg-green-400"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
