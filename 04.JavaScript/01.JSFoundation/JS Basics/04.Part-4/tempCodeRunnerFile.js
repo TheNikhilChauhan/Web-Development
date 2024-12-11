@@ -1,0 +1,1 @@
+tea = prompt(`Enter the tea type (Type "stop" to finish)`);
