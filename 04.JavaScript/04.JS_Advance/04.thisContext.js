@@ -4,7 +4,7 @@ const Person = {
     console.log(`Hi, I am ${this.name}`);
   },
 };
-
+console.log(this);
 Person.greet();
 
 const greetFunction = Person.greet;
