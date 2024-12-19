@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  color: #fff;
+}
+
+.card {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 30px;
+  text-align: center;
+}
+
+#textArea {
+  padding: 20px;
+  font-size: larger;
+  border-radius: 20px;
+  background-color: rgb(159, 155, 155);
+}
+
+#addButton {
+  padding: 20px;
+  background-color: blueviolet;
+  font-size: large;
+  font-weight: 700;
+  border-radius: 25px;
+}
+
+#addButton:hover {
+  background-color: rgb(112, 42, 177);
+  cursor: pointer;
+}
+
+#todo-list li {
+  background-color: rgb(113, 112, 112);
+  padding: 20px;
+  font-size: larger;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+#todo-list button {
+  background-color: red;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 12px 10px;
+}
+#todo-list button:hover {
+  background-color: rgb(242, 69, 69);
+  cursor: pointer;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+li.completed span {
+  text-decoration: line-through;
+  color: black;
+}
