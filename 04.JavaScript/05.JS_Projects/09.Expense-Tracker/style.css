@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: grey;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 2px 3px 10px rgba(139, 38, 38, 0.4);
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+#expenseSection {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: rgb(188, 184, 184);
+}
+
+#addExpense-btn {
+  border-radius: 25px;
+  padding: 12px;
+  font-weight: 600;
+  background-color: rgb(60, 60, 214);
+  color: white;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: xx-large;
+}
+
+#showExpense {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(71, 67, 67);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#deleteExp {
+  padding: 12px;
+  border-radius: 25px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+p {
+  font-size: x-large;
+}
