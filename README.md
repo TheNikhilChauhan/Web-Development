@@ -13,4 +13,6 @@
 <li>Node</li>
 
 <li> Project : VideoQuirk: backend project inspired by youtube</li>
+
+<li>React</li>
 </ol>
