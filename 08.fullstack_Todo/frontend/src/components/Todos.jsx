@@ -1,4 +1,5 @@
-export function Todos() {
+/* eslint-disable react/prop-types */
+export function Todos({ todos }) {
   return (
     <div
       style={{
@@ -7,17 +8,21 @@ export function Todos() {
         padding: "25px",
       }}
     >
-      <div>
-        <h2>Gym</h2>
-        <p>Go to gym at 8 in the evening</p>
-        <button
-          style={{
-            backgroundColor: "red",
-          }}
-        >
-          Mark as Completed
-        </button>
-      </div>
+      {todos.map((todo, index) => {
+        return (
+          <div key={index}>
+            <h2>{todo.title}</h2>
+            <p>{todo.description}</p>
+            <button
+              style={{
+                backgroundColor: "red",
+              }}
+            >
+              {todo.completed ? "Completed" : "Mark as Complete"}
+            </button>
+          </div>
+        );
+      })}
     </div>
   );
 }

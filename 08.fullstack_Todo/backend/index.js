@@ -1,9 +1,12 @@
 import express from "express";
 import { createTodo, updateTodo } from "./types.js";
 import { Todo } from "./db.js";
+import cors from "cors";
+
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 const PORT = 5000;
 
 /* 
@@ -33,7 +36,7 @@ app.post("/todo", async function (req, res) {
   });
 });
 app.get("/todos", async function (req, res) {
-  const response = await Todo.findAll();
+  const response = await Todo.find();
   res.json({
     response,
   });
