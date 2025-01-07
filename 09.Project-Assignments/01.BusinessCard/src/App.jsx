@@ -1,23 +1,29 @@
 import "./App.css";
+import { Navbar } from "./components/Navbar";
+import { CreateCard } from "./components/CreateCard";
+import { useState } from "react";
+import { ViewCard } from "./components/ViewCard";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
+  const [cards, setCards] = useState([]);
+
+  const addCard = (cardData) => {
+    setCards((prevCards) => [...prevCards, cardData]);
+  };
   return (
     <>
       <div>
-        <nav
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-            height: "100vh",
-          }}
-        >
-          <ul>
-            <li>Home</li>
-            <li>Create Card</li>
-            <li>View Card</li>
-          </ul>
-        </nav>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route
+              path="/createCard"
+              element={<CreateCard addCard={addCard} />}
+            />
+            <Route path="/viewCard" element={<ViewCard cards={cards} />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </>
   );
